@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/* LAYOUT FOR THE HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    align-items: baseline;
+    background: #f1f1f1;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav li{
+    margin: 0 2em;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover,
+nav a:focus{
+    border-bottom: 2px solid #b9b91c;
+    color: #b9b91c;
+}
+
+.logo p{
+    margin-left: 2em;
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: .25em;
+    font-weight: bold;
+}
+/* MEDIA QUERY FOR THE HEADER */
+@media (max-width:745px){
+    header{
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+     nav{
+         width: 100%;
+     }
+    
+    nav ul{
+        flex-direction: column;
+        margin-bottom: 0;
+        background:#554e4e;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    nav li{
+          margin: 0;
+    }
+
+    nav li:last-child{
+        margin-bottom: 0;
+    }
+
+    nav a{
+        display: block;
+        background: #333;
+        color: white;
+        padding: 10px 6rem;
+    }
+
+    
+    nav a:hover,
+    nav a:focus{
+    border-bottom: none;
+    /* padding-bottom: 10px; */
+    color: #b9b91c;
+    background: #111;
+
+     }
+
+     .logo{
+         width: 100%;
+         text-align: center;
+         }
+
+         
+ 
+}
+
+/* LAYOUT FOR THE MAIN */
+main{
+    background: url(horizon.jpeg) no-repeat ;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap{
+    margin: 0 15%;
+
+}
+
+main span{
+    display: block;
+}
+
+.wrap p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+}
+p .one{
+    font-size: 3rem;
+}
+
+p .two{
+    font-size: 4rem;
+    color: rgb(243, 243, 60);
+    margin-top: 0;
+}
+
+.three{
+    margin-bottom: 1em;
+}
+
+.btn{
+    padding: 1em;
+    background-color:rgb(243, 243, 60);
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 1rem;
+
+}
+
+.btn:hover{
+    background:yellow;
+}
